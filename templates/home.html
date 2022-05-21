@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyser</title>
+</head>
+<body>
+    <h1>Welcome to Text Analyser</h1><br>
+    <h2>Enter Your Text Below</h2>
+    <form action="/Atext" method="post">
+        {% csrf_token %}
+        <textarea name='text' style='width: 1035px; height: 211px;'></textarea><br>
+        <input type="checkbox" name="Removepunc"> Remove Punctuation<br>
+        <input type="checkbox" name="Capitalize"> UPPER CASE<br>
+        <input type="checkbox" name="Charcount"> Character Count<br>
+        <button type="submit"> Analyze Text</button>
+    </form>
+    
+</body>
+</html>
